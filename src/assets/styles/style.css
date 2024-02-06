@@ -47,8 +47,12 @@ body {
   transition: .2s ease-out;
 }
 
-.list__item:hover {
+/* .list__item:hover {
   scale: 1.1;
+} */
+
+.list__item:has(.item__link:hover, .item__link:focus){
+  scale: 1.1
 }
 
 .item__link {
